@@ -1,0 +1,6 @@
+twitter_credentials.py
+*.csv
+*.p
+*.json
+logs.txt
+__pycache__/
