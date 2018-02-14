@@ -36,7 +36,7 @@ class TweetCollector(object):
         valid_entities = set()
         if names is not None:
             names = [self._clean_name(x) for x in names]
-            for i in range(0, l73en(names), 100):
+            for i in range(0, len(names), 100):
                 batch = names[i:i + 100]
                 response = self.api.lookup_users(screen_names=batch)
                 valid_entities.update([r.screen_name.lower() for r in response])
